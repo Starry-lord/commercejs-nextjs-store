@@ -4,3 +4,5 @@ module.exports = {
       domains: ['cdn.chec.io'],
     },
   }
+
+  images.unoptimized = true
