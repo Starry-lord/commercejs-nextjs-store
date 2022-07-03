@@ -1,6 +1,6 @@
 [build]
   command = "yarn deploy"
-  publish = "/.next"
+  publish = "out"
 
 [[plugins]]
   package = "netlify-plugin-onboarding"
