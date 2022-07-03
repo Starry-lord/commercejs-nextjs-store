@@ -80,7 +80,7 @@ export default class SocialMedia extends React.Component {
                 className="font-size-display1 mb-3"
                 style={{ maxWidth: '26rem' }}
               >
-                Follow us on Instagram for more updates
+                Suivez-moi sur Instagram
               </p>
               <div className="d-flex">
                 <Link href="/about">

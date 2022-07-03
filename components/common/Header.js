@@ -25,7 +25,7 @@ const transitionStyles = {
 
 const mobileMenuLinks = [
   {
-    name: 'Home',
+    name: 'Acceuil',
     link: '/'
   },
   {
@@ -198,7 +198,8 @@ class Header extends Component {
               onClick={this.toggleMobileMenu}
               className="w-32 mr-1 d-block d-sm-none"
               alt="Menu icon"
-              layout='fill'
+              width={32}
+              height={32}
             />
             <Link href="/">
               <a>
@@ -206,7 +207,8 @@ class Header extends Component {
                   src="/images/commerce.svg"
                   className="logo cursor-pointer"
                   alt="Logo"
-                  layout='fill'
+                  width={360}
+                  height={300}
                 />
               </a>
             </Link>

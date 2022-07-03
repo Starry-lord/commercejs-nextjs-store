@@ -75,7 +75,7 @@ export default class ClientReview extends Component {
         >
           <div className="d-flex justify-content-between align-items-center pb-3">
             <p className="font-size-subheader font-weight-medium">
-              All reviews
+              Commentaires clients
             </p>
             <Image
               tabIndex="0"
@@ -93,7 +93,7 @@ export default class ClientReview extends Component {
           <div className="col-12 col-lg-10 offset-lg-1">
             <div className="d-flex justify-content-between flex-column flex-sm-row align-items-sm-center mb-3">
               <p className="font-size-title font-weight-medium mb-2 mb-sm-0">
-                4.3 stars from 10 reviews
+                4.3 étoiles pour 10 clients satisfaits
               </p>
             </div>
             <ReviewList reviews={reviews}>
@@ -102,7 +102,7 @@ export default class ClientReview extends Component {
                 onClick={this.handleOpen}
                 className="text-center bg-transparent w-100 h-72 px-3 text-decoration-underline"
               >
-                View all reviews
+                Tous les commentaires clients
               </button>
             </ReviewList>
           </div>

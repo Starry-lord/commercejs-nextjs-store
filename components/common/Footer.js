@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="row">
         <div className="col-12 col-sm-6 col-md-4">
           <p className="font-family-secondary font-size-display1 mb-4">
-            Commerce.js
+            À propos du site
           </p>
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
@@ -17,7 +17,7 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Documentation
+                Documentation commerce.js
               </a>
               <a
                 href="https://commercejs.com/features"
@@ -25,50 +25,50 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Features
+                Fonctionalités
               </a>
             </div>
             <div>
               <a
-                href="https://commercejs.com/about"
+                href="https://starrylord.ch"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                About
+                Made with ❤️ by Starry-Lord
               </a>
               <a
-                href="http://slack.commercejs.com/"
+                href="https://twc1rcle.com/"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Community
+                Communauté Anglophone
               </a>
             </div>
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-4">
           <p className="font-family-secondary font-size-display1 mb-4">
-            Follow us
+            Suivez-nous
           </p>
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <a
-                href="https://twitter.com/commercejs"
+                href="https://twitter.com/starryl0rd"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                Twitter Starry-Lord
               </a>
               <a
-                href="https://www.instagram.com/commerce.js/"
+                href="https://www.instagram.com/hathor.voyance"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
+                Instagram hathor.voyance
               </a>
             </div>
             <div>
@@ -78,15 +78,15 @@ const Footer = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Angel
+                test
               </a>
               <a
-                href="https://www.linkedin.com/company/chec-chec-commerce-inc.-/"
+                href="https://www.linkedin.com/in/sami-chakrouns/"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn
+                LinkedIn du webmaster
               </a>
             </div>
           </div>
@@ -117,7 +117,7 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Deploy to Netlify
+              Deployez sur Netlify
             </a>
             <p className="px-2 font-color-brand font-size-caption">-</p>
             <a
@@ -126,7 +126,7 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Clone in GitHub
+              Clonez dans GitHub
             </a>
             <p className="px-2 font-color-brand font-size-caption">-</p>
             <a
@@ -135,17 +135,17 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Contribute
+              Template
             </a>
           </div>
           <div className="font-color-brand font-size-caption py-4 text-right">
           <a
-              href="https://commercejs.com/"
+              href="https://starrylord.ch/"
               className="font-color-brand font-size-caption text-uppercase text-center"
               target="_blank"
               rel="noopener noreferrer"
             >
-              &copy; { new Date().getFullYear() } Chec/Commerce.js.
+              &copy; { new Date().getFullYear() } Chec/Commerce.js &amp; Starry-Lord.
             </a>
           </div>
         </div>
