@@ -19,11 +19,11 @@ class ProductsBanner extends Component {
             className="text-center font-size-display1 mb-3 font-weight-medium"
             style={{ maxWidth: '32rem' }}
           >
-            Maximum deux mois d'attente, mais c'est souvent moins, je fais de mon mieux pour vous répondre au plus vite.
+            Maximum deux mois d&apos;attente, mais c&apos;est souvent moins, je fais de mon mieux pour vous répondre au plus vite.
           </p>
           <Link href="/collection">
             <a className="d-flex py-3 align-items-center font-color-black borderbottom border-color-black">
-              <p className="mr-3">Plus d'offres </p>
+              <p className="mr-3">Plus d&apos;offres </p>
               <Image src="/icon/arrow-long-right.svg" alt='' width={32} height={32}/>
             </a>
           </Link>
