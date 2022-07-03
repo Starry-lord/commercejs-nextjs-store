@@ -3,6 +3,6 @@ module.exports = {
     images: {
       domains: ['cdn.chec.io'],
       loader: 'akamai',
-      path: '',
+      path: '/images',
     },
   }
