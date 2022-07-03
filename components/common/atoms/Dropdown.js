@@ -27,6 +27,7 @@ class Dropdown extends Component {
             alt="Downward symbol indicating opening of a dropdown"
             src="/icon/arrow-bottom.svg"
             className="w-20"
+            width={32} height={32}
           />
           <select
             name={this.props.name}

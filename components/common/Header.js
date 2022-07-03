@@ -198,6 +198,7 @@ class Header extends Component {
               onClick={this.toggleMobileMenu}
               className="w-32 mr-1 d-block d-sm-none"
               alt="Menu icon"
+              layout='fill'
             />
             <Link href="/">
               <a>
@@ -205,6 +206,7 @@ class Header extends Component {
                   src="/images/commerce.svg"
                   className="logo cursor-pointer"
                   alt="Logo"
+                  layout='fill'
                 />
               </a>
             </Link>

@@ -556,7 +556,7 @@ class CheckoutPage extends Component {
                     Cart
                   </a>
                 </Link>
-                <Image src="/icon/arrow-right.svg" className="w-16 mx-1" alt="Arrow icon"/>
+                <Image src="/icon/arrow-right.svg" className="w-16 mx-1" alt="Arrow icon" width={32} height={32}/>
                 <div className="font-size-caption font-weight-bold cursor-pointer">
                   Checkout
                 </div>
@@ -746,7 +746,7 @@ class CheckoutPage extends Component {
                         className="d-flex mb-2"
                       >
                         { (item && item.media)
-                          && (<Image className="checkout__line-item-image mr-2" src={item.media.source} alt={item.product_name}/>)
+                          && (<Image className="checkout__line-item-image mr-2" src={item.media.source} alt={item.product_name} width={100} height={100}/>)
                         }
                         <div className="d-flex flex-grow-1">
                           <div className="flex-grow-1">

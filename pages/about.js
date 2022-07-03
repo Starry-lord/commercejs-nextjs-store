@@ -46,7 +46,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image src="/netlify-illustration.svg" alt="Netlify illustration"/>
+              <Image src="/netlify-illustration.svg" alt="Netlify illustration" layout='fill'/>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image src="/github-illustration.svg" alt="GitHub illustration"/>
+              <Image src="/github-illustration.svg" alt="GitHub illustration" layout='fill'/>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image src="/blog-illustration.svg" alt="Commerce.js blog illustration"/>
+              <Image src="/blog-illustration.svg" alt="Commerce.js blog illustration" layout='fill'/>
             </div>
           </div>
         </div>

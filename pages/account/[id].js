@@ -187,7 +187,7 @@ export default function SingleOrderPage() {
                     </a>
                   </Link>
                   <Image src="/icon/arrow-right.svg" className="w-16 mx-1" alt="Arrow icon"/>
-                  <div className="font-size-caption font-weight-bold cursor-pointer">
+                  <div className="font-size-caption font-weight-bold cursor-pointer" width={32} height={32}>
                   { data.customer_reference }
                   </div>
                 </div>

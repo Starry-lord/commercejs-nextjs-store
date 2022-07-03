@@ -89,6 +89,8 @@ export default function Product() {
                 src={image}
                 alt="carousel"
                 className="w-100 mb-3 carousel-main-images"
+                width={100}
+                height={100}
               />
             ))) : (
               ''
@@ -105,7 +107,7 @@ export default function Product() {
             className="d-flex cursor-pointer py-3 justify-content-between font-weight-medium"
           >
             Shipping and returns
-            <Image src="/icon/plus.svg" alt='Shipping and Returns'/>
+            <Image src="/icon/plus.svg" alt='Shipping and Returns' width={16} height={16}/>
           </div>
           <Collapse isOpened={showShipping}>
             <div className="pb-4 font-color-medium">
@@ -119,7 +121,7 @@ export default function Product() {
             className="d-flex cursor-pointer py-3 justify-content-between font-weight-medium"
           >
             Details
-            <Image src="/icon/plus.svg" alt='Details'/>
+            <Image src="/icon/plus.svg" alt='Details' width={16} height={16}/>
           </div>
           <Collapse isOpened={showDetails}>
             <div

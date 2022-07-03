@@ -83,6 +83,8 @@ export default class ClientReview extends Component {
               className="w-24 cursor-pointer"
               onClick={this.handleClose}
               alt="Cross icon"
+              width={16} 
+              height={16}
             />
           </div>
           <ReviewList reviews={reviews} />
