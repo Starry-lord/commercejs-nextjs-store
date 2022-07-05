@@ -70,7 +70,7 @@ export default class AddressForm extends Component {
           <div className="col-12 col-sm-6 mb-3">
             <label className="w-100">
               <p className="mb-1 font-size-caption font-color-light">
-                Country*
+                Pays*
               </p>
               <Dropdown
                 required
@@ -99,7 +99,7 @@ export default class AddressForm extends Component {
           <div className="col-12 col-sm-6 mb-3">
             <label className="w-100">
               <p className="mb-1 font-size-caption font-color-light">
-                Address line 1*
+                Ligne adresse 1*
               </p>
               <input
                 required
@@ -114,7 +114,7 @@ export default class AddressForm extends Component {
           <div className="col-12 col-sm-6 mb-3">
             <label className="w-100">
               <p className="mb-1 font-size-caption font-color-light">
-                Address line 2 (optional)
+                ligne adresse 2 (optionel)
               </p>
               <input
                 name={`${type}[street_2]`}
@@ -129,13 +129,13 @@ export default class AddressForm extends Component {
           <div className="col-12 col-sm-6 mb-3">
             <label className="w-100">
               <p className="mb-1 font-size-caption font-color-light">
-                State/province/region*
+                État/Région*
               </p>
               <Dropdown
                 required
                 name={`${type}[region]`}
                 value={region}
-                placeholder="Select a region"
+                placeholder="Sélectionnez une région"
               >
                 {
                   Object.entries(this.state.subdivisions).map(([code, name]) => (
@@ -150,7 +150,7 @@ export default class AddressForm extends Component {
           <div className="col-12 col-sm-6 mb-3">
             <label className="w-100">
               <p className="mb-1 font-size-caption font-color-light">
-                Postal code/zip code*
+                Code Postal*
               </p>
               <input
                 required

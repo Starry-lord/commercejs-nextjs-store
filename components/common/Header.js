@@ -25,15 +25,15 @@ const transitionStyles = {
 
 const mobileMenuLinks = [
   {
-    name: 'Acceuil',
+    name: 'Accueil',
     link: '/'
   },
   {
-    name: 'Shop',
+    name: 'Boutique',
     link: '/collection'
   },
   {
-    name: 'About',
+    name: 'À propos',
     link: '/about'
   }
 ];
@@ -148,7 +148,7 @@ class Header extends Component {
           ) }
           <Link href="/account">
             <a className="font-color-black mx-2">
-              My account
+              Mon Compte
             </a>
           </Link>
           <button
@@ -189,7 +189,7 @@ class Header extends Component {
               <a className="mr-4 font-color-black">Shop</a>
             </Link>
             <Link href="/about">
-              <a className="font-color-black">About</a>
+              <a className="font-color-black">À propos</a>
             </Link>
           </div>
           <div className="logo-container">
@@ -207,8 +207,8 @@ class Header extends Component {
                   src="/images/commerce.svg"
                   className="logo cursor-pointer"
                   alt="Logo"
-                  width={360}
-                  height={300}
+                  width={300}
+                  height={50}
                 />
               </a>
             </Link>

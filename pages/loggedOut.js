@@ -14,10 +14,10 @@ const LoggedOut = () => (
         <div className="row mt-4">
           <div className="col-12 text-center">
             <h2 className="font-size-header mb-4 pt-5">
-              You have successfully logged out.
+              Vous vous êtes déconnecté avec succès.
             </h2>
             <Link href="/" className="mt-4">
-              <a>Continue shopping</a>
+              <a>Continuez votre shopping</a>
             </Link>
           </div>
         </div>

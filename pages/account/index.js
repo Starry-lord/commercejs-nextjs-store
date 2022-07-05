@@ -56,7 +56,7 @@ class CustomerAccountPage extends Component {
       return null;
     }
     return (
-      <small><strong>Customer since:</strong> { this.formatDate(this.props.customer.created) }</small>
+      <small><strong>Client depuis:</strong> { this.formatDate(this.props.customer.created) }</small>
     );
   }
 
@@ -75,7 +75,7 @@ class CustomerAccountPage extends Component {
         this.setState({
           isError: true,
           message: [
-            'Opps, looks like an error occurred!'
+            'Oops, on dirait que quelque-chose s&apos;est cassé!'
           ],
         });
       });
@@ -87,23 +87,23 @@ class CustomerAccountPage extends Component {
   getFulfillmentStatus(status) {
     if (!status) {
       return (
-        <span className="badge badge-secondary">Processing</span>
+        <span className="badge badge-secondary">En traitement...</span>
       );
     }
     if (status === 'fulfilled') {
       return (
-        <span className="badge badge-primary">Fullfilled</span>
+        <span className="badge badge-primary">Envoyé</span>
       );
     }
 
     if (status === 'not_fulfilled') {
       return (
-        <span className="badge badge-secondary">Processing</span>
+        <span className="badge badge-secondary">En traitement...</span>
       );
     }
 
     return (
-      <span className="badge badge-secondary">Processing</span>
+      <span className="badge badge-secondary">En traitement...</span>
     );
   }
 

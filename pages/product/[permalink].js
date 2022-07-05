@@ -18,7 +18,7 @@ import CategoryList from '../../components/products/CategoryList';
 import reduceProductImages from '../../lib/reduceProductImages';
 
 const detailView = `<p>
-  Slightly textured fabric with tonal geometric design and a bit of shine
+  Consultation sur le sujet de votre choix, n'oubliez pas de détailler la question dans les notes si besoin
 </p>`;
 
 export default function Product() {
@@ -56,7 +56,7 @@ export default function Product() {
   }, [permalink]);
 
   if (loading) {
-    return <TemplatePage page={ {message: 'Loading...'} } />
+    return <TemplatePage page={ {message: 'Chargement...'} } />
   }
 
   if (product === null) {
@@ -67,7 +67,7 @@ export default function Product() {
   return (
     <Root>
       <Head>
-        <title>{ product.name } | commerce</title>
+        <title>{ product.name } | Voyance Digitale </title>
       </Head>
 
       <div className="py-5 my-5">
@@ -106,13 +106,13 @@ export default function Product() {
             onClick={toggleShipping}
             className="d-flex cursor-pointer py-3 justify-content-between font-weight-medium"
           >
-            Shipping and returns
+            Délai d&apos;envoi
             <Image src="/icon/plus.svg" alt='Shipping and Returns' width={16} height={16}/>
           </div>
           <Collapse isOpened={showShipping}>
             <div className="pb-4 font-color-medium">
-              Arrives in 5 to 7 days, returns accepted within 30
-              days. For more information, click here.
+              Je vous réponds par e-mail au plus tard 2 semaines après votre commande
+              .
             </div>
           </Collapse>
           <div className="h-1 border-bottom border-color-black" />
@@ -120,7 +120,7 @@ export default function Product() {
             onClick={toggleDetails}
             className="d-flex cursor-pointer py-3 justify-content-between font-weight-medium"
           >
-            Details
+            Détails
             <Image src="/icon/plus.svg" alt='Details' width={16} height={16}/>
           </div>
           <Collapse isOpened={showDetails}>

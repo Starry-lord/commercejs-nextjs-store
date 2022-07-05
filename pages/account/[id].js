@@ -67,7 +67,7 @@ export default function SingleOrderPage() {
       return null
     }
     return (
-      <small><strong>Ordered placed on:</strong> { moment(date).format('MMM Do Y') }</small>
+      <small><strong>Date de la commande:</strong> { moment(date).format('MMM Do Y') }</small>
     )
   };
 
@@ -94,7 +94,7 @@ export default function SingleOrderPage() {
 
     return (
       <div>
-        <h5>Billing address</h5>
+        <h5>Adresse de facturation</h5>
         <div className="card p-2 mb-4">
           <div>
             <div><strong>{ data.name }</strong></div>
@@ -118,7 +118,7 @@ export default function SingleOrderPage() {
 
     return (
       <div>
-        <h5>Shipping address</h5>
+        <h5>Adresse de livraison</h5>
         <div className="card p-2">
           <div>
             <div><strong>{ data.name }</strong></div>
@@ -183,7 +183,7 @@ export default function SingleOrderPage() {
                 <div className="d-flex pb-4 breadcrumb-container">
                   <Link href="/account">
                     <a className="font-size-caption text-decoration-underline cursor-pointer font-color-black">
-                      Account
+                      Compte
                     </a>
                   </Link>
                   <Image src="/icon/arrow-right.svg" className="w-16 mx-1" alt="Arrow icon"/>
@@ -196,22 +196,22 @@ export default function SingleOrderPage() {
             <div className="row mt-5 pt-5">
               <div className="col-12">
                 <h2 className="font-size-header mb-4 pt-5 text-center">
-                  Order: #{ data.customer_reference }
+                  Commande: #{ data.customer_reference }
                 </h2>
               </div>
             </div>
             <div className="row mt-5 pt-5">
               <div className="col-12 col-md-8 col-lg-8">
                 <div className="d-flex flex-row justify-content-between">
-                  <h5>Items</h5>
+                  <h5>Articles</h5>
                   <OrderDate date={data.created}/>
                 </div>
                 <table className="table table-bordered">
                   <thead>
                     <tr>
-                      <th>Product</th>
-                      <th>Price</th>
-                      <th>Quantity</th>
+                      <th>Service</th>
+                      <th>Prix</th>
+                      <th>Quantité</th>
                       <th>Total</th>
                     </tr>
                   </thead>
@@ -233,7 +233,7 @@ export default function SingleOrderPage() {
                   <tfoot>
                     <tr>
                       <td colSpan="3" className="border-right-0">
-                        Subtotal
+                        Sous-Total
                       </td>
                       <td className="border-left-0 text-right">
                         { data.order.subtotal.formatted_with_symbol}
@@ -241,7 +241,7 @@ export default function SingleOrderPage() {
                     </tr>
                     <tr>
                       <td colSpan="3" className="border-right-0">
-                        Shipping
+                        Frais d&apos;envois
                       </td>
                       <td className="border-left-0 text-right">
                         { data.order.shipping.price.formatted_with_symbol}
@@ -249,7 +249,7 @@ export default function SingleOrderPage() {
                     </tr>
                     <tr>
                       <td colSpan="3" className="border-right-0">
-                        Tax
+                        Taxe
                       </td>
                       <td className="border-left-0 text-right">
                         { data.order.tax.amount.formatted_with_symbol}

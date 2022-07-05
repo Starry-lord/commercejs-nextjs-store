@@ -127,7 +127,7 @@ class Cart extends Component {
                       <div className="col-6 d-none d-md-block">
                         <Link href="/collection">
                           <a className="h-56 d-flex align-items-center justify-content-center border border-color-black bg-white w-100 flex-grow-1 font-weight-medium font-color-black px-3">
-                            Continue Shopping
+                            Continuez votre Shopping
                           </a>
                         </Link>
                       </div>
@@ -153,7 +153,7 @@ class Cart extends Component {
                     </div>
                   </div>
                   <p className="text-center font-weight-medium">
-                    Your cart is empty
+                    Votre Panier est vide...
                   </p>
                 </div>
               )}

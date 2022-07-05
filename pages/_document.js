@@ -35,7 +35,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Hathor Voyance | Voyance Digitale" />
           <meta property="og:image" content="https://hathor-voyance.ch/images/home-1.jpg" />
           <meta property="og:description" content="Voyance et numérologie, depuis plus de 45 ans." />
-          <meta property="og:url" content="https://commercejs-demo-store.netlify.app" />
+          <meta property="og:url" content="https://hathor-voyance.ch" />
           <meta property="twitter:title" content="Hathor Voyance | Voyance Digitale" />
           <meta name="twitter:creator" content="@starryl0rd" />
           <meta property="twitter:image" content="https://hathor-voyance.ch/images/home-1.jpg" />

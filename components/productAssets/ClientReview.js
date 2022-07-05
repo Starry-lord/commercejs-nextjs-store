@@ -93,7 +93,7 @@ export default class ClientReview extends Component {
           <div className="col-12 col-lg-10 offset-lg-1">
             <div className="d-flex justify-content-between flex-column flex-sm-row align-items-sm-center mb-3">
               <p className="font-size-title font-weight-medium mb-2 mb-sm-0">
-                4.3 étoiles pour 10 clients satisfaits
+                4.3/5 pour 10 clients satisfaits
               </p>
             </div>
             <ReviewList reviews={reviews}>
