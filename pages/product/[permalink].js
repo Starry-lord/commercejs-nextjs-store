@@ -3,7 +3,6 @@ import commerce from '../../lib/commerce';
 import { Collapse } from 'react-collapse';
 import Head from 'next/head';
 import ErrorPage from 'next/error'
-import Image from 'next/image'
 import { useRouter } from 'next/router';
 import Root from '../../components/common/Root';
 import TemplatePage from '../../components/common/TemplatePage';
@@ -84,13 +83,11 @@ export default function Product() {
         <div className="product-images">
           <div className="flex-grow-1">
             {Array.isArray(images) ? (images.map((image, i) => (
-              <Image
+              <img
                 key={i}
                 src={image}
                 alt="carousel"
                 className="w-100 mb-3 carousel-main-images"
-                width={100}
-                height={100}
               />
             ))) : (
               ''
@@ -107,7 +104,7 @@ export default function Product() {
             className="d-flex cursor-pointer py-3 justify-content-between font-weight-medium"
           >
             Délai d&apos;envoi
-            <Image src="/icon/plus.svg" alt='Shipping and Returns' width={16} height={16}/>
+            <img src="/icon/plus.svg" alt='Shipping and Returns' />
           </div>
           <Collapse isOpened={showShipping}>
             <div className="pb-4 font-color-medium">
@@ -121,7 +118,7 @@ export default function Product() {
             className="d-flex cursor-pointer py-3 justify-content-between font-weight-medium"
           >
             Détails
-            <Image src="/icon/plus.svg" alt='Details' width={16} height={16}/>
+            <img src="/icon/plus.svg" alt='Details' />
           </div>
           <Collapse isOpened={showDetails}>
             <div

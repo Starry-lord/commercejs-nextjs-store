@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 import Router, { useRouter } from 'next/router';
 import { useSelector } from 'react-redux'
 import moment from 'moment';
@@ -80,7 +79,7 @@ export default function SingleOrderPage() {
     }
 
     return (
-      <Image className="img-thumbnail h-72 mr-4" alt={data.product_name} src={data.media.source} />
+      <img className="img-thumbnail h-72 mr-4" alt={data.product_name} src={data.media.source} />
     )
   };
 
@@ -186,7 +185,7 @@ export default function SingleOrderPage() {
                       Compte
                     </a>
                   </Link>
-                  <Image src="/icon/arrow-right.svg" className="w-16 mx-1" alt="Arrow icon"/>
+                  <img src="/icon/arrow-right.svg" className="w-16 mx-1" alt="Arrow icon"/>
                   <div className="font-size-caption font-weight-bold cursor-pointer" width={32} height={32}>
                   { data.customer_reference }
                   </div>

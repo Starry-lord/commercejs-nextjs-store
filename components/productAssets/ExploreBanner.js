@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
 
 export default class ExploreBanner extends React.Component {
   constructor(props) {
@@ -80,7 +79,7 @@ export default class ExploreBanner extends React.Component {
                   <Link href="/collection">
                     <a className="d-flex py-3 align-items-center font-color-black borderbottom border-color-black">
                       <p className="mr-3">Explorez les offres</p>
-                      <Image src="/icon/arrow-long-right.svg" alt='' width={32} height={32}/>
+                      <img src="/icon/arrow-long-right.svg" alt='' />
                     </a>
                   </Link>
                 </div>

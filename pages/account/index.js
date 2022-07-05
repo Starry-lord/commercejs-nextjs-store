@@ -113,30 +113,30 @@ class CustomerAccountPage extends Component {
   getPaymentStatus(status) {
     if (!status) {
       return (
-        <span className="badge badge-secondary">Pending</span>
+        <span className="badge badge-secondary">En cours</span>
       );
     }
 
     if (status === 'not-paid') {
       return (
-        <span className="badge badge-warning">Not paid</span>
+        <span className="badge badge-warning">À Payer</span>
       );
     }
 
     if (status === 'paid') {
       return (
-        <span className="badge badge-success">Paid</span>
+        <span className="badge badge-success">Payé</span>
       );
     }
 
     if (status === 'refunded') {
       return (
-        <span className="badge badge-danger">Refunded</span>
+        <span className="badge badge-danger">Remboursé</span>
       );
     }
 
     return (
-      <span className="badge badge-secondary">Pending</span>
+      <span className="badge badge-secondary">En cours</span>
     );
   }
 
@@ -149,7 +149,7 @@ class CustomerAccountPage extends Component {
     if (!orders || !orders.length) {
       return (
         <div>
-          You havent placed an order yet!
+          Vous n&apos;avez pas de commandes en cours!
         </div>
       );
     }
@@ -177,7 +177,7 @@ class CustomerAccountPage extends Component {
     if (!orders || !orders.length) {
       return (
         <div className="card text-center p-2">
-          <p>You haven&apos;t placed any orders yet!</p>
+          <p>Vous n&apos;avez pas de commandes en cours!</p>
         </div>
       );
     }
@@ -186,9 +186,9 @@ class CustomerAccountPage extends Component {
       <table className="table table-bordered">
       <thead>
         <tr>
-          <th>Order</th>
-          <th>Payment</th>
-          <th>Fulfillment</th>
+          <th>Commande</th>
+          <th>Paiement</th>
+          <th>Exécution</th>
           <th>Total</th>
           <th>Actions</th>
         </tr>
@@ -214,7 +214,7 @@ class CustomerAccountPage extends Component {
               <td>{ order.order_value.formatted_with_symbol }</td>
               <td>
                 <Link href={`account/${order.id}`}>
-                  <a>View order</a>
+                  <a>Voir la commande</a>
                 </Link>
               </td>
             </tr>
@@ -269,14 +269,14 @@ class CustomerAccountPage extends Component {
     return (
       <Root>
         <Head>
-          <title>Account</title>
+          <title>Compte</title>
         </Head>
         <div className="account-container">
           <div className="custom-container py-5 my-4 my-sm-5">
             <div className="row mt-4">
               <div className="col-12">
                 <h2 className="font-size-header mb-4 pt-5 text-center">
-                  My account
+                  Mon compte
                 </h2>
                 { this.renderAlert() }
               </div>
@@ -284,7 +284,7 @@ class CustomerAccountPage extends Component {
             <div className="row mt-5 pt-5">
               <div className="col-12 col-md-8 col-lg-8">
                 <div className="d-flex flex-row justify-content-between">
-                  <h5>Order history</h5>
+                  <h5>Historique de commandes</h5>
                   { this.customerSince() }
                 </div>
                 { this.renderOrdersTable() }
@@ -303,7 +303,7 @@ class CustomerAccountPage extends Component {
                     { email }
                   </a>
                   <h6>
-                    Shipping address
+                    Adresse de livraison
                   </h6>
                   { this.renderShippingAddress() }
                 </div>

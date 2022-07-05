@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
-import Image from 'next/image'
 
 class Dropdown extends Component {
   constructor(props) {
@@ -23,11 +22,10 @@ class Dropdown extends Component {
             'border-color-black'}`}
         >
           <p className="font-color-medium">{this.props.value || this.props.placeholder }</p>
-          <Image
+          <img
             alt="Downward symbol indicating opening of a dropdown"
             src="/icon/arrow-bottom.svg"
             className="w-20"
-            width={32} height={32}
           />
           <select
             name={this.props.name}

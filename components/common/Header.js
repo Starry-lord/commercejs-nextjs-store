@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
 import Cart from '../cart/Cart';
 import commerce from '../../lib/commerce';
 import Animation from '../cart/Animation';
@@ -193,22 +192,18 @@ class Header extends Component {
             </Link>
           </div>
           <div className="logo-container">
-            <Image
+            <img
               src={`/icon/${showMobileMenu ? 'cross' : 'menu'}.svg`}
               onClick={this.toggleMobileMenu}
               className="w-32 mr-1 d-block d-sm-none"
               alt="Menu icon"
-              width={32}
-              height={32}
             />
             <Link href="/">
               <a>
-                <Image
+                <img
                   src="/images/commerce.svg"
                   className="logo cursor-pointer"
                   alt="Logo"
-                  width={300}
-                  height={50}
                 />
               </a>
             </Link>

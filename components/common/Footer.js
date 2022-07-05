@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image'
 
 const Footer = () => (
   <footer className="pt-5">
@@ -101,7 +100,7 @@ const Footer = () => (
               placeholder="email address"
             />
             <button className="bg-transparent position-absolute right-0 top-50 translateY--50 pr-2 h-48">
-              <Image src="/icon/arrow-long-right.svg" className="w-24" alt="Arrow icon" width={32} height={32}/>
+              <img src="/icon/arrow-long-right.svg" className="w-24" alt="Arrow icon" />
             </button>
           </div>
         </div>

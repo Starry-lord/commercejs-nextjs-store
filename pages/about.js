@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Root from '../components/common/Root';
 import Footer from '../components/common/Footer';
-import Image from 'next/image'
 
 const About = () => (
   <Root>
@@ -34,7 +33,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image src="/cjs-illustration.svg" alt="Commerce.js illustration" width={100} height={100}/>
+              <img src="/cjs-illustration.svg" alt="Commerce.js illustration" />
 
             </div>
           </div>
@@ -46,7 +45,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image src="/netlify-illustration.svg" alt="Netlify illustration" layout='fill'/>
+              <img src="/netlify-illustration.svg" alt="Netlify illustration" />
             </div>
           </div>
         </div>
@@ -100,7 +99,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image src="/github-illustration.svg" alt="GitHub illustration" layout='fill'/>
+              <img src="/github-illustration.svg" alt="GitHub illustration" />
             </div>
           </div>
         </div>
@@ -111,7 +110,7 @@ const About = () => (
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="d-flex align-items-center justify-content-center h-100">
-              <Image src="/blog-illustration.svg" alt="Commerce.js blog illustration" layout='fill'/>
+              <img src="/blog-illustration.svg" alt="Commerce.js blog illustration" />
             </div>
           </div>
         </div>
