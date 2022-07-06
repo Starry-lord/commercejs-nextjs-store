@@ -1,21 +1,21 @@
 [
   {
-    "slug": "facial-products",
-    "name": "Facial Products",
+    "slug": "numerologie",
+    "name": "Numérologie",
     "meta": {
       "image": "/images/collection/1.png"
     }
   },
   {
-    "slug": "hair-products",
-    "name": "Hair Products",
+    "slug": "etude-du-prenom",
+    "name": "Étude du prénom",
     "meta": {
       "image": "/images/collection/2.png"
     }
   },
   {
-    "slug": "body-products",
-    "name": "Body Products",
+    "slug": "tarologie",
+    "name": "Tarologie",
     "meta": {
       "image": "/images/collection/3.png"
     }

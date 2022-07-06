@@ -88,7 +88,7 @@ class LoginHandler extends Component {
           isError: false,
           email: '',
           message: [
-            'If that email address exists in our system, we\'ve just sent you a link to continue logging in!'
+            'Si cet e-mail est lié à un compte ici, nous venons de vous envoyer un lien de connexion!'
           ]
         });
       })
@@ -151,7 +151,7 @@ class LoginHandler extends Component {
           type="submit"
           onClick={this.loginCustomer}
         >
-          Get magic link
+          Obtenir le lien magique
         </button>
       </form>
     );
@@ -164,7 +164,7 @@ class LoginHandler extends Component {
       return (
         <Root>
           <Head>
-            <title>Logging in...</title>
+            <title>Connexion...</title>
           </Head>
           <LoginAnimation />
         </Root>
