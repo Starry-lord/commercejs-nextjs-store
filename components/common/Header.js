@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Cart from '../cart/Cart';
 import commerce from '../../lib/commerce';
 import Animation from '../cart/Animation';
@@ -200,10 +201,12 @@ class Header extends Component {
             />
             <Link href="/">
               <a>
-                <img
+                <Image
                   src="/images/commerce.svg"
                   className="logo cursor-pointer"
                   alt="Logo"
+                  width={300}
+                  height={50}
                 />
               </a>
             </Link>

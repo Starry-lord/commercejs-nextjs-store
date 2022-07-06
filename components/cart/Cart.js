@@ -91,7 +91,7 @@ class Cart extends Component {
               <div className="px-4 px-md-5">
                 <div className="pt-4 pb-3 borderbottom border-color-black d-flex justify-content-between align-items-center">
                   <p className="font-family-secondary font-size-subheader">
-                    Shopping Cart
+                    Votre Panier
                   </p>
                   <button
                     className="bg-transparent p-0"
@@ -118,7 +118,7 @@ class Cart extends Component {
                   <div className="cart-footer">
                     <div className="mb-3 d-flex">
                       <p className="font-color-light mr-2 font-weight-regular">
-                        Subtotal:
+                        Sous-total:
                       </p>
                       <p>{cart.subtotal.formatted_with_symbol}</p>
                     </div>
