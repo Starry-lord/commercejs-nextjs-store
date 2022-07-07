@@ -11,12 +11,12 @@ const Footer = () => (
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <a
-                href="https://spaces.chec.io/44670"
+                href="https://instagram.com/hathor.voyance"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Retrouvez le shop ici
+                Instagram
               </a>
               <a
                 href="mailto:hathor@hathor-voyance.ch"
@@ -29,12 +29,12 @@ const Footer = () => (
             </div>
             <div>
               <a
-                href="https://www.instagram.com/hathor.voyance"
+                href="https://spaces.chec.io/44670"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
+                Retrouvez le shop ici
               </a>
               <a
                 href="callto:+41901588741"
@@ -97,7 +97,7 @@ const Footer = () => (
           <div className="position-relative">
             <input
               className="borderbottom border-color-gray400 h-48 w-100 px-3"
-              placeholder="email address"
+              placeholder="inactive"
             />
             <button className="bg-transparent position-absolute right-0 top-50 translateY--50 pr-2 h-48">
               <img src="/icon/arrow-long-right.svg" className="w-24" alt="Arrow icon" />
