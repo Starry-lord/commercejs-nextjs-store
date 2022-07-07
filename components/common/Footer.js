@@ -37,7 +37,7 @@ const Footer = () => (
                 Retrouvez le shop ici
               </a>
               <a
-                href="callto:+41901588741"
+                href="tel:+41901588741"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
