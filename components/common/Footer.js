@@ -11,81 +11,81 @@ const Footer = () => (
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <a
-                href="https://commercejs.com/docs/"
+                href="https://spaces.chec.io/44670"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Documentation commerce.js
+                Retrouvez le shop ici
               </a>
               <a
-                href="https://commercejs.com/features"
+                href="mailto:hathor@hathor-voyance.ch"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Fonctionalités
+                Contact
               </a>
             </div>
             <div>
               <a
-                href="https://starrylord.ch"
+                href="https://www.instagram.com/hathor.voyance"
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Made with ❤️ by Starry-Lord
+                Instagram
               </a>
               <a
-                href="https://twc1rcle.com/"
+                href="callto:+41901588741"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Communauté Anglophone
+                Téléphone 2.50/minute
               </a>
             </div>
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-4">
           <p className="font-family-secondary font-size-display1 mb-4">
-            Suivez-nous
+            Sites partenaires
           </p>
           <div className="d-flex font-color-medium mb-5 pb-3 pb-md-0 mb-md-0">
             <div className="pr-5">
               <a
-                href="https://twitter.com/starryl0rd"
+                href=""
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter Starry-Lord
+                partenaire 1
               </a>
               <a
-                href="https://www.instagram.com/hathor.voyance"
+                href=""
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram hathor.voyance
+                partenaire 2
               </a>
             </div>
             <div>
               <a
-                href="https://angel.co/company/chec"
+                href=""
                 className="mb-3 d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                test
+                partenaire 3
               </a>
               <a
-                href="https://www.linkedin.com/in/sami-chakrouns/"
+                href=""
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn du webmaster
+                partenaire 4
               </a>
             </div>
           </div>
@@ -109,34 +109,6 @@ const Footer = () => (
     <div className="pt-md-5">
       <div className="bg-brand300">
         <div className="custom-container d-flex flex-column flex-md-row align-items-center justify-content-between">
-          <div className="pt-5 pb-0 pt-md-4 pb-md-4 d-flex align-items-center flex-wrap justify-content-center">
-            <a
-              href="https://app.netlify.com/start/deploy?repository=https://github.com/chec/commercejs-nextjs-demo-store"
-              className="font-color-brand font-size-caption text-uppercase text-center"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Deployez sur Netlify
-            </a>
-            <p className="px-2 font-color-brand font-size-caption">-</p>
-            <a
-              href="https://github.com/chec/commercejs-nextjs-demo-store"
-              className="font-color-brand font-size-caption text-uppercase text-center"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Clonez dans GitHub
-            </a>
-            <p className="px-2 font-color-brand font-size-caption">-</p>
-            <a
-              href="https://github.com/chec/commercejs-nextjs-demo-store"
-              className="font-color-brand font-size-caption text-uppercase text-center"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Template
-            </a>
-          </div>
           <div className="font-color-brand font-size-caption py-4 text-right">
           <a
               href="https://starrylord.ch/"
@@ -144,7 +116,7 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              &copy; { new Date().getFullYear() } Chec/Commerce.js &amp; Starry-Lord.
+              Made with ❤️ by Starry-Lord / 2022 - { new Date().getFullYear() }.
             </a>
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function HeroSection() {
                 Hathor Voyance
               </p>
               <p className="text-transform-uppercase font-size-title mb-5 hero-subheader">
-                Voyance digitale et par téléphone +41 (0) 901 588 741
+                Voyance digitale et par téléphone <a href='callto:+41901588741'>+41 (0) 901 588 741</a>
               </p>
               <Link href="/collection">
                 <a className="d-flex align-items-center bg-transparent border border-color-white h-56 px-5 font-color-white hero-btn">
