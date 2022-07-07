@@ -135,7 +135,7 @@ export default function SingleOrderPage() {
    * Render loading state
    */
   if (customerLoading) {
-    return <TemplatePage page={  { message: 'Loading...' }  } />
+    return <TemplatePage page={  { message: 'Chargement...' }  } />
   }
 
   /**
@@ -149,21 +149,21 @@ export default function SingleOrderPage() {
    * Render a page if an error occurred
    */
   if (error) {
-    return <TemplatePage page={ {message: 'Sorry something went wrong.'} } />
+    return <TemplatePage page={ {message: 'Désolé, quelque chose s\'est mal passé.'} } />
   }
 
   /**
    * Render loading state
    */
   if (loading) {
-    return <TemplatePage page={ {message: 'Loading'} } />
+    return <TemplatePage page={ {message: 'Chargement'} } />
   }
 
   /**
    * Render a page if no order found
    */
   if (!data) {
-    return <TemplatePage page={ {message: 'Sorry we cannot find an order with that number, if you think this is in error please contact us!'} } />
+    return <TemplatePage page={ {message: 'Désolé, on dirait qu\'il n\'y a pas de commandes ici. Si vous pensez que c\'est une erreur, contactez-nous!'} } />
   }
 
   /**
@@ -172,7 +172,7 @@ export default function SingleOrderPage() {
   return (
     <Root>
       <Head>
-        <title>{ data.customer_reference } | commerce</title>
+        <title>{ data.customer_reference } | Hathor-Voyance</title>
       </Head>
       <div className="account-container">
           <div className="custom-container py-5 my-4 my-sm-5">

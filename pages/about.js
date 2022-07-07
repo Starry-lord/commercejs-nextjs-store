@@ -19,14 +19,6 @@ const About = () => (
               <h4 className="font-size-subheader mb-4">
               Adepte de la pensée positive et bienveillante, passionnée de numérologie, je pratique le tirage de divers Tarots et Oracles depuis l’âge de 20 ans. Tout au long de ma vie j’ai communiqué et médité avec « mes cartes » auxquelles j’ai demandé de nombreux conseils pour gérer tout d’abord ma vie ensuite pour gérer l’éducation de mes 4 enfants qui sont adultes maintenant. J’ai souvent été amenée à utiliser mon expérience, dans la lecture des cartes, pour aider mes proches dans leurs multiples questionnements. A l’heure actuelle je dispose de temps libre et je souhaite partager cette grande expérience avec le public. Je réponds aux questions les plus disparates alors n’hésitez pas à me contacter..
               </h4>
-              <div className="about-cjs mt-3 d-flex flex-row">
-                <a className="px-4 py-3 font-color-white about-doc" href="https://commercejs.com/docs/" target="_blank" rel="noopener noreferrer">
-                  Documentation
-                </a>
-                <a className="px-4 py-3 about-dev" href="https://commercejs.com/docs/community/" target="_blank" rel="noopener noreferrer">
-                  Guides from the community
-                </a>
-              </div>
             </div>
           </div>
 
@@ -59,16 +51,6 @@ const About = () => (
             Nous sommes dans une année universelle 2022 ce qui se réduit à 2+0+2+2=6 cette année universelle 6 nous dit: Ce qui devient prioritaire cette année sont l’éducation, l’équilibre, les responsabilités, les choix judicieux. C’est L’année de la santé, du social, comme une sorte de pause après l’année 5 (2021), pour régulariser, stabiliser ce qui avait été entrepris. On cherche la paix, et on trouve parfois la guerre… Les mariages sont en nette augmentation, les naissances également, mais aussi les divorces et les ruptures. Les responsabilités internationales, la pédagogie et la culture dans le monde, les problèmes de santé et de soins, l’économie des foyers, tout cela touche à une recherche d’harmonisation qui aboutit… ou pas. N’oublions pas que le 6 est le choix.
             </h4>
             <h6>Les nombres et leurs secrets; Philippe de Louvigny/Editions Nathan/février 1989</h6>
-            <div className="mt-3">
-              <a
-                className="px-4 py-3 flex-grow-1 font-color-white about-net"
-                href="https://app.netlify.com/start/deploy?repository=https://github.com/chec/commercejs-nextjs-demo-store"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Deploy to Netlify
-              </a>
-            </div>
           </div>
         </div>
       </div>

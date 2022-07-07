@@ -17,7 +17,7 @@ import CategoryList from '../../components/products/CategoryList';
 import reduceProductImages from '../../lib/reduceProductImages';
 
 const detailView = `<p>
-  Consultation sur le sujet de votre choix, n'oubliez pas de détailler la question dans les notes si besoin
+  Consultation sur le sujet de votre choix, n'oubliez pas de détailler la question dans les notes si nécéssaire
 </p>`;
 
 export default function Product() {

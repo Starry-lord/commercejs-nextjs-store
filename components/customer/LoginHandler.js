@@ -47,7 +47,7 @@ class LoginHandler extends Component {
         this.setState({
           loading: false,
           isError: true,
-          message: ['The login link has expired. Please try again.'],
+          message: ['Le lien de connexion a expiré. Vous devriez réessayer.'],
         });
       });
   }
@@ -135,7 +135,7 @@ class LoginHandler extends Component {
       <form>
         <label className="w-100 mb-4">
           <p className="mb-1 font-size-caption font-color-light text-left">
-            Email address
+            Adresse e-mail
           </p>
           <input
             name="email"

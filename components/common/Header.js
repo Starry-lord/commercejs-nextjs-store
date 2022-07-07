@@ -156,7 +156,7 @@ class Header extends Component {
             type="button"
             onClick={this.handleLogout}
           >
-            Logout
+            Déconnexion
           </button>
         </div>
       );
@@ -186,7 +186,7 @@ class Header extends Component {
         >
           <div className="d-none d-sm-flex">
             <Link href="/collection">
-              <a className="mr-4 font-color-black">Shop</a>
+              <a className="mr-4 font-color-black">Boutique</a>
             </Link>
             <Link href="/about">
               <a className="font-color-black">À propos</a>

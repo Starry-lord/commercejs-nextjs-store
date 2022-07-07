@@ -60,7 +60,7 @@ export default class AddressForm extends Component {
           <div className="col-12 mb-3">
             <label className="w-100">
               <p className="mb-1 font-size-caption font-color-light">
-                Full name*
+                Nom complet*
               </p>
               <input required name={`${type}[name]`} autoComplete="name" value={name} className="rounded-0 w-100" />
             </label>
@@ -75,7 +75,7 @@ export default class AddressForm extends Component {
               <Dropdown
                 required
                 name={`${type}[country]`}
-                placeholder="Select a country"
+                placeholder="Selectionnez un pays"
                 value={country}
               >
                 {
@@ -90,7 +90,7 @@ export default class AddressForm extends Component {
           </div>
           <div className="col-12 col-sm-6 mb-3">
             <label className="w-100">
-              <p className="mb-1 font-size-caption font-color-light">City*</p>
+              <p className="mb-1 font-size-caption font-color-light">Ville*</p>
               <input required name={`${type}[town_city]`} autoComplete="address-level2" value={townCity} className="rounded-0 w-100" />
             </label>
           </div>
@@ -107,7 +107,7 @@ export default class AddressForm extends Component {
                 name={`${type}[street]`}
                 value={street}
                 className="rounded-0 w-100"
-                placeholder="House number, steet address, etc."
+                placeholder="Numéro, rue, etc."
               />
             </label>
           </div>
@@ -120,7 +120,7 @@ export default class AddressForm extends Component {
                 name={`${type}[street_2]`}
                 value={street2}
                 className="rounded-0 w-100"
-                placeholder="Apartment, suite number, etc."
+                placeholder="Apartement, étage, etc."
               />
             </label>
           </div>

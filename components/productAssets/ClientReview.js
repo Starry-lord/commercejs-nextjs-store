@@ -5,34 +5,34 @@ import Modal from '../common/atoms/Modal';
 const reviews = [
   {
     stars: '5',
-    title: 'Perfect',
-    description: 'Great fit and feel. They elevate lounging to the next level!',
-    reviewBy: 'Heidi C.',
-    date: 'December, 2019'
+    title: 'Sympathique et empathique',
+    description: 'J\'avais besoin d\'un tirage rapide pour prendre une décision importante qui me semblait trop dure à prendre, et j\'ai pu trouver une personne chaleureuse et compatissante au bout du fil. Merci Hathor, je rappelerai.',
+    reviewBy: 'Phillipe T.',
+    date: 'Juillet, 2022'
   },
   {
-    stars: '3.5',
-    title: 'So comfortable!',
+    stars: '4.5',
+    title: 'MAMAAAAAAAA',
     description:
-      'I sized up just in case and kind of wished I hadn’t. Very comfortable and I live in them exclusively during the weekend.',
-    reviewBy: 'Heidi C.',
-    date: 'December, 2019'
+      'Oooooooooooh! ...',
+    reviewBy: 'Freddy M.',
+    date: 'Juin, 2022'
   },
   {
     stars: '4',
-    title: 'Comfy but thin',
+    title: 'Robert Junior',
     description:
-      'Comfortable but kinda thin for a pant. I typically wear a 32/33 pant and had to size up to XL for these to not fit like a legging. Have been wearing pretty solid for a month of so and there\'s some pilling, but not a lot. Good price for OK product.',
-    reviewBy: 'Heidi C.',
-    date: 'December, 2019'
+      'Mon mari et moi nous avions beaucoup de mal à trouver le nom du bébé, mais grace à Hathor-Voyance, nous avons pu nous décider! Le petit Robert fait 3,5 kilos, mais c\'est mon mari qui à gagné...',
+    reviewBy: 'Luisa J.',
+    date: 'Mars, 2022'
   },
   {
     stars: '5',
-    title: 'So comfortable!',
+    title: 'Voyante Sympa!',
     description:
-      'I sized up just in case and kind of wished I hadn’t. Very comfortable and I live in them exclusively during the weekend.',
-    reviewBy: 'Heidi C.',
-    date: 'December, 2019'
+      'J\'ai trouvé le tirage super sympa, je recommande Hathor pour son expérience. J\'ai reçu mon tirage beacoup plus vite que je ne pensais, et ca a été le coup de pouce qu\'il me fallait pour prendre ma décision.',
+    reviewBy: 'Pascale C.',
+    date: 'Janvier, 2022'
   }
 ];
 

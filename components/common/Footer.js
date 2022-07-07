@@ -19,7 +19,7 @@ const Footer = () => (
                 Instagram
               </a>
               <a
-                href="mailto:hathor@hathor-voyance.ch"
+                href="mailto:hathor@hathor-voyance.ch?subject=Demande%20de%20contact"
                 className="d-block font-color-medium"
                 target="_blank"
                 rel="noopener noreferrer"

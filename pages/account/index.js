@@ -75,7 +75,7 @@ class CustomerAccountPage extends Component {
         this.setState({
           isError: true,
           message: [
-            'Oops, on dirait que quelque-chose s&apos;est cassé!'
+            'Oops, on dirait que quelque-chose s&apos;est mal passé!'
           ],
         });
       });
@@ -250,7 +250,7 @@ class CustomerAccountPage extends Component {
   render() {
 
     if (this.props.loading.customer) {
-      return <TemplatePage page={  { message: 'Loading...' }  } />
+      return <TemplatePage page={  { message: 'Chargement...' }  } />
     }
 
     // Displays message when the customer logs out.
