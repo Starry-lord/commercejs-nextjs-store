@@ -123,7 +123,7 @@ Le tirage complet</h5>
         <div className="col-12 col-lg-6">
           <div className="about-image h-100">
             <div className="align-items-center justify-content-center h-100">
-              <img className="mt-5 mb-5" src="/images/home-2.jpg" alt="Tarot 1" width={600} height={380}/>
+              <img className="mt-5 mb-5" src="/images/home-2.jpg" alt="Tarot 1" width={600} height={420}/>
               <img src="/images/explore-banner.png" alt="Tarot 2" width={600} height={754}/>
             </div>
           </div>
