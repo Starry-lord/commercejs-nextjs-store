@@ -15,7 +15,7 @@ class ProductRow extends Component {
               permalink={product.permalink}
               image={product.media.source}
               name={product.name}
-              price={product.price.formatted_with_symbol}
+              price={product.price.formatted_without_symbol}
               description={product.description && product.description.replace(reg, '')}
               soldOut={product.is.sold_out}
             />

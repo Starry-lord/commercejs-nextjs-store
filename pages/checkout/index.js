@@ -36,18 +36,18 @@ class CheckoutPage extends Component {
 
       // string property names to conveniently identify inputs related to commerce.js validation errors
       // e.g error { param: "shipping[name]"}
-      'customer[first_name]': 'Robert',
-      'customer[last_name]': 'Redford',
-      'customer[email]': 'robertredford@example.com',
-      'customer[phone]': '',
+      'customer[first_name]': '',
+      'customer[last_name]': '',
+      'customer[email]': '',
+      'customer[additional-name]': '',
       'customer[id]': null,
-      'shipping[name]': 'Robert Redford',
-      'shipping[street]': '111 rue de Genève',
+      'shipping[name]': '',
+      'shipping[street]': '',
       'shipping[street_2]': '',
-      'shipping[town_city]': 'Genève',
-      'shipping[region]': 'GE',
-      'shipping[postal_zip_code]': '1200',
-      'shipping[country]': 'CH',
+      'shipping[town_city]': '',
+      'shipping[region]': '',
+      'shipping[postal_zip_code]': '',
+      'shipping[country]': '',
       'billing[name]': '',
       'billing[street]': '',
       'billing[street_2]': '',
@@ -369,15 +369,16 @@ class CheckoutPage extends Component {
         firstname: this.state['customer[first_name]'],
         lastname: this.state['customer[last_name]'],
         email: this.state['customer[email]'],
-        phone: this.state['customer[phone]'] || undefined
+        additionalName: this.state['customer[additional-name]'] || undefined
       },
       // collected 'order notes' data for extra field configured in the Chec Dashboard
       extrafields: {
-        extr_j0YnEoqOPle7P6: this.state.orderNotes,
+        extr_VPvL5zWPrlAQkX: this.state.orderNotes,
+        extr_yA6nldPMglEWbz: this.state['customer[additional-name]'],
       },
       // Add more to the billing object if you're collecting a billing address in the
       // checkout form. This is just sending the name as a minimum.
-      billing: this.state.selectedBillingOption === 'Same as shipping Address' ? shippingAddress : {
+      billing: this.state.selectedBillingOption === 'Pareille à l\'adresse de livraison' ? shippingAddress : {
         name: this.state['billing[name]'],
         country: this.state['billing[country]'],
         street: this.state['billing[street]'],
@@ -589,12 +590,13 @@ class CheckoutPage extends Component {
                       <div className="col-12 col-sm-6 mb-3">
                         <label className="w-100">
                           <p className="mb-1 font-size-caption font-color-light">
-                            Téléphone
+                            Autres prénoms
                           </p>
                           <input
-                            name="customer[phone]"
-                            autoComplete="tel"
-                            value={this.state['customer[phone]']}
+                            required
+                            name="customer[additional-name]"
+                            autoComplete="additional-name"
+                            value={this.state['customer[additional-name]']}
                             className="rounded-0 w-100"
                           />
                         </label>
@@ -672,11 +674,12 @@ class CheckoutPage extends Component {
                       </div>
                       <label className="w-100 mb-3">
                         <p className="mb-1 font-size-caption font-color-light">
-                          Notes de la commande (Détaillez votre question ici, si nécéssaire)
+                          Votre question
                         </p>
-                        <textarea name="orderNotes" value={this.state.orderNotes} className="rounded-0 w-100" />
+                        <input required name="orderNotes" value={this.state.orderNotes} className="rounded-0 w-100" />
                       </label>
                     </div>
+                    
 
                     { this.renderPaymentDetails() }
 
@@ -702,7 +705,7 @@ class CheckoutPage extends Component {
                           </label>
                         ))}
                       </div>
-                      {this.state.selectedBillingOption === 'Use a different billing address' && (
+                      {this.state.selectedBillingOption === 'Utiliser une adresse de facturation différente' && (
                         <AddressForm
                           type="billing"
                           countries={this.state.countries}
@@ -718,7 +721,7 @@ class CheckoutPage extends Component {
                     </>}
 
                     <p className="checkout-error">
-                      { !selectedShippingOption ? 'Select a shipping option!' : '' }
+                      { !selectedShippingOption ? 'Sélectionnez une option de livraison!' : '' }
                     </p>
                     <button
                       type="submit"
