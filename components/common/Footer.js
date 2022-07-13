@@ -108,15 +108,15 @@ const Footer = () => (
     </div>
     <div className="pt-md-5">
       <div className="bg-brand300">
-        <div className="custom-container d-flex flex-column flex-md-row align-items-center justify-content-between">
-          <div className="font-color-brand font-size-caption py-4 text-right">
+        <div className="custom-container d-flex flex-column align-items-center justify-content-between">
+          <div className="font-color-brand font-size-caption py-4">
           <a
               href="https://starrylord.ch/"
-              className="font-color-brand font-size-caption text-uppercase text-center"
+              className="font-color-brand font-size-caption text-uppercase"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Made with ❤️ by Starry-Lord / 2022 - { new Date().getFullYear() }.
+              Made with ❤️ by Starry-Lord, 2022 - { new Date().getFullYear() }
             </a>
           </div>
         </div>

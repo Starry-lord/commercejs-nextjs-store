@@ -11,11 +11,11 @@ const imagesInfo = [
     translateRatio: 30
   },
   {
-    image: '/images/insta/3.jpg',
+    image: '/Post-1.jpeg',
     translateRatio: 0
   },
   {
-    image: '/images/insta/4.jpg',
+    image: '/images/insta/4.webp',
     translateRatio: -20
   },
   {
