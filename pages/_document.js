@@ -12,7 +12,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="fr">
         <Head>
           <link rel="icon" href="/favicon.png" />
           <link
