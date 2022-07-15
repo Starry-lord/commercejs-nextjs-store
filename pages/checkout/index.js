@@ -40,6 +40,7 @@ class CheckoutPage extends Component {
       'customer[last_name]': '',
       'customer[email]': '',
       'customer[additional-name]': '',
+      'customer[bday]': '',
       'customer[id]': null,
       'shipping[name]': '',
       'shipping[street]': '',
@@ -369,12 +370,14 @@ class CheckoutPage extends Component {
         firstname: this.state['customer[first_name]'],
         lastname: this.state['customer[last_name]'],
         email: this.state['customer[email]'],
+        bday: this.state['customer[bday]'],
         additionalName: this.state['customer[additional-name]'] || undefined
       },
       // collected 'order notes' data for extra field configured in the Chec Dashboard
       extrafields: {
         extr_VPvL5zWPrlAQkX: this.state.orderNotes,
         extr_yA6nldPMglEWbz: this.state['customer[additional-name]'],
+        extr_mOVKl4adYwprRP: this.state['customer[bday]'],
       },
       // Add more to the billing object if you're collecting a billing address in the
       // checkout form. This is just sending the name as a minimum.
@@ -583,6 +586,14 @@ class CheckoutPage extends Component {
                             Nom*
                           </p>
                           <input required name="customer[last_name]" autoComplete="family-name" value={this.state['customer[last_name]']} className="rounded-0 w-100" />
+                        </label>
+                      </div>
+                      <div className="col-12 col-sm-6 mb-3">
+                        <label className="w-100">
+                          <p className="mb-1 font-size-caption font-color-light">
+                            Date de Naissance
+                          </p>
+                          <input required name="customer[bday]" autoComplete="bday" value={this.state['customer[bday]']} className="rounded-0 w-100" type="date" />
                         </label>
                       </div>
                     </div>
