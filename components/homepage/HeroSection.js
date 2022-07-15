@@ -46,9 +46,13 @@ export default function HeroSection() {
               <p className="text-transform-uppercase font-size-title hero-subheader">
               <a href='tel:+41901588741'>+41 901 588 741</a>
               </p>
-              <p className="text-transform-uppercase font-size-title mb-5 hero-subheader">
+              <p className="text-transform-uppercase font-size-title hero-subheader">
               2.50CHF par minute
               </p>
+              <p className="text-transform-uppercase font-size-title hero-subheader">
+              08h00 - 14h00</p>
+              <p className="text-transform-uppercase font-size-title mb-5 hero-subheader">
+              Lundi au Vendredi</p>
               <Link href="/collection">
                 <a className="d-flex align-items-center bg-transparent border border-color-white h-56 px-5 font-color-white hero-btn">
                   Offrez-vous un tirage
