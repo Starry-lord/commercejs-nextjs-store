@@ -33,7 +33,7 @@ class CarouselImages extends Component {
     }
 
     this.carouselImages.forEach(image => {
-      image && (image.style.borderColor = '#ffffff');
+      image && (image.style.borderColor = '#ffffff00');
     });
 
     for (let index = 0; index <= mainImages.length - 1; index++) {
