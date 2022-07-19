@@ -61,11 +61,11 @@ class CheckoutPage extends Component {
       countries: {},
 
       'fulfillment[shipping_method]': '',
-      cardNumber: ccFormat('4242424242424242'),
-      expMonth: '11',
-      expYear: '23',
-      cvc: '123',
-      billingPostalZipcode: '1200',
+      cardNumber: ccFormat(''),
+      expMonth: '',
+      expYear: '',
+      cvc: '',
+      billingPostalZipcode: '',
 
       errors: {
         'fulfillment[shipping_method]': null,
