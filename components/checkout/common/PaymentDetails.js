@@ -4,12 +4,8 @@ import PropTypes from 'prop-types';
 import Radiobox from '../../common/atoms/Radiobox';
 
 export default class PaymentDetails extends Component {
-  /**
-   * Render a form for using the Chec test gateway.
-   *
-   * @returns {JSX.Element}
-   */
-  renderTestGateway() {
+  
+  renderPaypal() {
     const {
       gateways,
       onChangeGateway,
@@ -165,7 +161,7 @@ export default class PaymentDetails extends Component {
           Détail de paiement
         </p>
         <div className="border border-color-gray400 mb-5">
-          { this.renderTestGateway() }
+          { this.renderPaypal() }
           { this.renderStripe() }
           { /* todo support other gateways here */ }
         </div>
