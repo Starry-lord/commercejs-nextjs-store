@@ -9,7 +9,7 @@ export default class PaymentDetails extends Component {
    *
    * @returns {JSX.Element}
    */
-  renderTestGateway() {
+  renderPaypal() {
     const {
       gateways,
       onChangeGateway,
@@ -164,7 +164,7 @@ export default class PaymentDetails extends Component {
           Détail de paiement
         </p>
         <div className="border border-color-gray400 mb-5">
-          { this.renderTestGateway() }
+          { this.renderPaypal() }
           { this.renderStripe() }
           { /* todo support other gateways here */ }
         </div>
