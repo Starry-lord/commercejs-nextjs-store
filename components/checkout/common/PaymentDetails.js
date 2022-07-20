@@ -20,24 +20,24 @@ export default class PaymentDetails extends Component {
       cvc,
     } = this.props;
 
-    if (!gateways || !gateways.available['test_gateway']) {
+    if (!gateways || !gateways.available['gway_nldB0Qp0Emd3oE']) {
       return null;
     }
 
     return (
       <div className="borderbottom border-color-gray500">
         <label
-          onClick={() => onChangeGateway('test_gateway')}
+          onClick={() => onChangeGateway('gway_nldB0Qp0Emd3oE')}
           className="p-3 d-flex align-items-center cursor-pointer"
         >
           <Radiobox
-            checked={selectedGateway === 'test_gateway'}
+            checked={selectedGateway === 'gway_nldB0Qp0Emd3oE'}
             className="mr-3"
           />
           <p className="font-weight-medium">Carte de crédit/débit</p>
         </label>
 
-        { selectedGateway === 'test_gateway' && (
+        { selectedGateway === 'gway_nldB0Qp0Emd3oE' && (
           <div className="pl-5 pr-3 pb-3 ml-2">
             <div className="row">
               <div className="col-sm-8">

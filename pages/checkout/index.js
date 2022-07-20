@@ -79,7 +79,7 @@ class CheckoutPage extends Component {
 
       discountCode: 'CODEREDUC',
 
-      selectedGateway: 'test_gateway',
+      selectedGateway: 'gway_nldB0Qp0Emd3oE',
       loading: false,
       // Optional if using Stripe, used to track steps of checkout using Stripe.js
       stripe: {
@@ -400,7 +400,7 @@ class CheckoutPage extends Component {
     }
 
     // If test gateway selected add necessary card data for the order to be completed.
-    if (this.state.selectedGateway === 'test_gateway') {
+    if (this.state.selectedGateway === 'gway_nldB0Qp0Emd3oE') {
       this.setState({
         loading: true,
       });
