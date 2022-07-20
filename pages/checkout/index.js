@@ -79,7 +79,7 @@ class CheckoutPage extends Component {
 
       discountCode: 'CODEREDUC',
 
-      selectedGateway: 'gway_nldB0Qp0Emd3oE',
+      selectedGateway: 'paypal',
       loading: false,
       // Optional if using Stripe, used to track steps of checkout using Stripe.js
       stripe: {
@@ -395,22 +395,22 @@ class CheckoutPage extends Component {
         shipping_method: this.state['fulfillment[shipping_method]']
       },
       payment: {
-        gateway: this.state.selectedGateway,
+        gateway: this.selectedGateway,
+        gateway: 'paypal',
+        paypal: {
+          action: 'authorize',
+        },
       },
     }
 
     // If test gateway selected add necessary card data for the order to be completed.
-    if (this.state.selectedGateway === 'gway_nldB0Qp0Emd3oE') {
+    if (this.state.selectedGateway === 'paypal') {
       this.setState({
         loading: true,
       });
 
       newOrder.payment.card = {
-        number: this.state.cardNumber,
-        expiry_month: this.state.expMonth,
-        expiry_year: this.state.expYear,
-        cvc: this.state.cvc,
-        postal_zip_code: this.state.billingPostalZipcode,
+        email: this.state.email,
       }
     }
 
