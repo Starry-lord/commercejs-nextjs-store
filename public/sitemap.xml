@@ -7,6 +7,12 @@
                 <loc>https://hathor-voyance.ch/account/index</loc>
                 <lastmod>2022-07-07</lastmod>
             </url><url>
+                <loc>https://hathor-voyance.ch/account/[id]</loc>
+                <lastmod>2022-07-07</lastmod>
+            </url><url>
+                <loc>https://hathor-voyance.ch/checkout/confirm</loc>
+                <lastmod>2022-07-04</lastmod>
+            </url><url>
                 <loc>https://hathor-voyance.ch/checkout/index</loc>
                 <lastmod>2022-07-20</lastmod>
             </url><url>
