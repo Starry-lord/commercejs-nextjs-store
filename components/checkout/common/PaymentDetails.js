@@ -9,7 +9,7 @@ export default class PaymentDetails extends Component {
    *
    * @returns {JSX.Element}
    */
-  renderPaypal() {
+  renderTestGateway() {
     const {
       gateways,
       onChangeGateway,
@@ -20,24 +20,24 @@ export default class PaymentDetails extends Component {
       cvc,
     } = this.props;
 
-    if (!gateways || !gateways.available['gway_nldB0Qp0Emd3oE']) {
+    if (!gateways || !gateways.available['paypal']) {
       return null;
     }
 
     return (
       <div className="borderbottom border-color-gray500">
         <label
-          onClick={() => onChangeGateway('gway_nldB0Qp0Emd3oE')}
+          onClick={() => onChangeGateway('paypal')}
           className="p-3 d-flex align-items-center cursor-pointer"
         >
           <Radiobox
-            checked={selectedGateway === 'gway_nldB0Qp0Emd3oE'}
+            checked={selectedGateway === 'paypal'}
             className="mr-3"
           />
           <p className="font-weight-medium">Carte de crédit/débit</p>
         </label>
 
-        { selectedGateway === 'gway_nldB0Qp0Emd3oE' && (
+        { selectedGateway === 'paypal' && (
           <div className="pl-5 pr-3 pb-3 ml-2">
             <div className="row">
               <div className="col-sm-8">
@@ -51,6 +51,7 @@ export default class PaymentDetails extends Component {
                     value={cardNumber}
                     maxLength="16"
                     className="rounded-0 w-100"
+                    required
                   />
                 </label>
               </div>
@@ -164,7 +165,7 @@ export default class PaymentDetails extends Component {
           Détail de paiement
         </p>
         <div className="border border-color-gray400 mb-5">
-          { this.renderPaypal() }
+          { this.renderTestGateway() }
           { this.renderStripe() }
           { /* todo support other gateways here */ }
         </div>
