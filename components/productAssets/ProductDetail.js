@@ -102,7 +102,7 @@ class ProductDetail extends Component {
    * Get symbol of formatted price
    */
   getCurrencySymbol(priceFormattedWithSymbol) {
-    return priceFormattedWithSymbol.substring(1, 0);
+    return priceFormattedWithSymbol.substring(3, 0);
   }
 
   /**
@@ -155,7 +155,7 @@ class ProductDetail extends Component {
               { soldOut ? 'Fini' : 'Ajouter au panier' }
             </span>
             <span className="border-left border-color-white pl-3">
-            {priceSymbol}{this.getPrice()}
+            {this.getPrice()}{priceSymbol}
             </span>
           </button>
         </div>
