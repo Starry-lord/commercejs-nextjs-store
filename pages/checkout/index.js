@@ -79,7 +79,7 @@ class CheckoutPage extends Component {
 
       discountCode: 'CODEREDUC',
 
-      selectedGateway: 'paypal',
+      selectedGateway: 'test_gateway',
       loading: false,
       // Optional if using Stripe, used to track steps of checkout using Stripe.js
       stripe: {
@@ -396,15 +396,11 @@ class CheckoutPage extends Component {
       },
       payment: {
         gateway: this.selectedGateway,
-        gateway: 'paypal',
-        paypal: {
-          action: 'authorize',
-        },
       },
     }
 
     // If test gateway selected add necessary card data for the order to be completed.
-    if (this.state.selectedGateway === 'paypal') {
+    if (this.state.selectedGateway === 'test_gateway') {
       this.setState({
         loading: true,
       });

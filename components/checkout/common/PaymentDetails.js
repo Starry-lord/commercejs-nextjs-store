@@ -5,7 +5,7 @@ import Radiobox from '../../common/atoms/Radiobox';
 
 export default class PaymentDetails extends Component {
   
-  renderPaypal() {
+  renderTestGateway() {
     const {
       gateways,
       onChangeGateway,
@@ -16,24 +16,24 @@ export default class PaymentDetails extends Component {
       cvc,
     } = this.props;
 
-    if (!gateways || !gateways.available['paypal']) {
+    if (!gateways || !gateways.available['test_gateway']) {
       return null;
     }
 
     return (
       <div className="borderbottom border-color-gray500">
         <label
-          onClick={() => onChangeGateway('paypal')}
+          onClick={() => onChangeGateway('test_gateway')}
           className="p-3 d-flex align-items-center cursor-pointer"
         >
           <Radiobox
-            checked={selectedGateway === 'paypal'}
+            checked={selectedGateway === 'test_gateway'}
             className="mr-3"
           />
           <p className="font-weight-medium">Carte de crédit/débit</p>
         </label>
 
-        { selectedGateway === 'paypal' && (
+        { selectedGateway === 'test_gateway' && (
           <div className="pl-5 pr-3 pb-3 ml-2">
             <div className="row">
               <div className="col-sm-8">
@@ -161,7 +161,7 @@ export default class PaymentDetails extends Component {
           Détail de paiement
         </p>
         <div className="border border-color-gray400 mb-5">
-          { this.renderPaypal() }
+          { this.renderTestGateway() }
           { this.renderStripe() }
           { /* todo support other gateways here */ }
         </div>
