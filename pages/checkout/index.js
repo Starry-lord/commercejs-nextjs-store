@@ -798,20 +798,20 @@ class CheckoutPage extends Component {
                 <div className="py-3 borderbottom border-color-black">
                   {[
                     {
-                      name: 'Subtotal',
+                      name: 'Sous-total',
                       amount: checkout.live ? checkout.live.subtotal.formatted_with_symbol : '',
                     },
                     {
-                      name: 'Tax',
+                      name: 'Taxe',
                       amount: checkout.live ? checkout.live.tax.amount.formatted_with_symbol : '',
                     },
                     {
-                      name: 'Shipping',
-                      amount: selectedShippingOption ? `${selectedShippingOption.description} - ${selectedShippingOption.price.formatted_with_symbol}` : 'No shipping method selected',
+                      name: 'Envoi',
+                      amount: selectedShippingOption ? `${selectedShippingOption.description} - ${selectedShippingOption.price.formatted_with_symbol}` : 'Aucune méthode de livraison sélectionnée',
                     },
                     {
-                      name: 'Discount',
-                      amount: (checkout.live && checkout.live.discount && checkout.live.discount.code) ? `Saved ${checkout.live.discount.amount_saved.formatted_with_symbol}` : 'No discount code applied',
+                      name: 'Rabais',
+                      amount: (checkout.live && checkout.live.discount && checkout.live.discount.code) ? `Saved ${checkout.live.discount.amount_saved.formatted_with_symbol}` : 'Aucun code de réduction appliquée',
                     }
                   ].map((item, i) => (
                     <div key={i} className="d-flex justify-content-between align-items-center mb-2">
